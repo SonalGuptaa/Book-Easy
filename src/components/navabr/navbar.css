@@ -15,7 +15,7 @@
 
 }
 .logo{
-    font-weight: 600;
+    font-weight: 500;
 }
 .navbutton{
     margin-left: 20px;
@@ -23,4 +23,5 @@
     padding: 5px 1opx;
     cursor: pointer;
     color: #003580;
+    /* border-radius: 5px;     */
 }
