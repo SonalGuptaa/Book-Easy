@@ -27,6 +27,7 @@ import { useNavigate } from 'react-router-dom'; // Or the appropriate import sta
       key: 'selection'
     },
   ]);
+
   //Count of persons
   const [openOptions,setOpenOptions] = useState(false);
   const [options,setOptions] = useState({
@@ -44,6 +45,7 @@ import { useNavigate } from 'react-router-dom'; // Or the appropriate import sta
   })
   }
   const handleSearch = ()=>{
+    // Navigating to hotel Page
      navigate("/hotels" , {state:{destination,date,options}})
   }
   return (
@@ -83,6 +85,7 @@ import { useNavigate } from 'react-router-dom'; // Or the appropriate import sta
           <div className="headerSearchItem">
           <FontAwesomeIcon icon={faBed} className="headerIcon"/>
           <input type="text" placeholder="Where are you going?" className="headerSearchInput"
+          // Changing the destination will update state
           onChange={e=>setDestination(e.target.value)}
           />
           </div>
@@ -102,6 +105,7 @@ import { useNavigate } from 'react-router-dom'; // Or the appropriate import sta
             moveRangeOnFirstSelection={false}
             ranges={date}
             className="date"
+            minDate={new Date()}
           />)}
 
           </div>
