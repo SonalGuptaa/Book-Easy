@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Navbar from '../../components/navabr/Navbar'
 import Header from '../../components/header/Header'
@@ -8,7 +7,7 @@ import { useState } from 'react'
 import {format} from "date-fns";
 import { DateRange } from 'react-date-range'
 import Searchitem from '../../components/searchItem/Searchitem'
-// import { DateRange } from 'react-date-range'
+
 
 const List = () => {
   const location = useLocation();
@@ -87,6 +86,8 @@ const List = () => {
             </div>
             <button>Search</button>
           </div>
+
+
           <div className='listResult'>
             <Searchitem/>
             <Searchitem/>
